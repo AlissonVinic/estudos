@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*em shadow: 1px 1px 1px black, o primeiro px é para o lado, o segundo px é pra baixo, e o terceiro é o espalhamento. Logo após isso vem a cor.*/
+
+body{
+    height: 100%;
+    background-image: linear-gradient(rgb(136, 184, 198), rgb(61, 113, 184));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    max-width: 40em;
+    background-color: rgb(67, 67, 67);
+    color: white;
+    padding: 1em;
+    margin: auto;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
+}
+
+h1{
+    text-shadow: 1px 1px 0px black;
+    color: rgb(167, 167, 167);
+}
+
+h2{
+    text-shadow: 1px 1px 0px black;
+    color: rgb(197, 197, 197);
+}
+
+p{
+    text-align: justify;
+}

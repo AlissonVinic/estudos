@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        h2{
+            padding: 0.5em 0;
+        }
+
+        p{
+            text-align: justify;
+            text-indent: 1.5em;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0 2em;
+        }
+
+        a:hover{
+            color: rgb(154, 255, 154);
+        }
+
+        body{
+            background-color: rgb(150, 150, 150);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        header{
+            padding: 1em 0;
+            background-color: rgb(2, 125, 92);
+            color: white;
+            text-align: center;
+        }
+
+        #navHeader{
+            border-top: 1px solid rgb(2, 167, 170);
+            background-color: rgb(2, 125, 92);
+            text-align: center;
+            padding: 3px 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.496);
+        }
+
+        main{
+            padding: 1em 1em;
+            background: rgb(255, 255, 255);
+            max-width: 850px;
+            margin: auto;
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.567);
+        }
+
+        article{
+            padding: 1em 0;
+        }
+
+        aside{
+            background-color: rgb(166, 166, 166);
+            padding: 0.2em 0;
+            margin-top: 1em;
+            border-radius: 5px;
+        }
+
+        aside > p{
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        footer{
+            padding-top: 0.5em;
+            height: 3em;
+            background-color: rgb(29, 82, 64);
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+    </header>
+    <nav id="navHeader">
+            <a href="#">Java</a>
+            <a href="#">Javascript</a>
+            <a href="#">PHP</a>
+            <a href="#">C++</a>
+            <a href="#">Kotlin</a>
+    </nav>
+
+    <main>
+        <section id="noticia">
+            <h1>Notícias</h1>
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nobis voluptates quia perferendis beatae inventore unde, ullam, vero necessitatibus commodi mollitia odio earum, voluptatibus illo at delectus praesentium doloremque fugit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, veritatis. Exercitationem tenetur accusamus consequuntur quis sequi, facilis at quaerat ipsum recusandae ipsam excepturi fuga hic corrupti asperiores placeat dolore ratione.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+
+            <article>
+                <h2>Notícias sobre programação</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam architecto eveniet tempore! Incidunt reprehenderit inventore nesciunt laudantium distinctio minus, voluptatum nemo soluta voluptatem consectetur doloremque dignissimos. Eaque magni delectus assumenda. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In est beatae aut enim vitae cupiditate laudantium necessitatibus vel ipsum ipsam! Omnis doloribus illum cupiditate? Optio tempore officiis iure tenetur nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error harum dolore in eum quam voluptate laudantium totam quis magni est et, odio molestiae sed assumenda pariatur impedit voluptatibus. Deleniti, quaerat.</p>
+
+            </article>
+
+            <article>
+                <h2>Notícias sobre futebol</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae iure et distinctio. Dolorum eum blanditiis velit molestias, sapiente placeat quisquam nobis fugit earum maiores in neque aliquam facilis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reprehenderit laboriosam eius sequi error harum numquam? Labore culpa expedita ratione sed iste nulla sunt dolore magnam, ipsum, molestias, veritatis minima!</p>
+            </article>
+
+            
+        </section>
+    </main>
+
+    <footer>
+        <nav id="navFooter">
+            <a href="#">Projetos</a>
+            <a href="#">Nossas avaliações</a>
+            <a href="#">Canal no Youtube</a>
+        </nav>
+    </footer>
+</body>
+</html>

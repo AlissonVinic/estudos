@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <!--O _blank serve pra abrir em uma nova página, e não na atual, e o rel external significa que é uma página externa, ou seja, não pertence ao meu site. Existem rel: next, prev, nofollow etc.-->
+    <p>Para acessar o Sigaa UFERSA, <a href="https://sigaa.ufersa.edu.br/sigaa/verTelaLogin.do" target="_blank" rel="external">clique aqui</a>.</p>
+
+    <!--Já nesse parágrafo, a página do link irá sobrepor a página atual.-->
+    <p>Para acessar o github do curso em vídeo <a href="https://github.com/cursoemvideo">clique aqui</a>.</p>
+
+    <p>Você pode acessar também a segunda página do meu site</p>
+    <p><a href="pag002.html" target="_self" rel="next">Página 2</a></p>
+
+    <p>Temos também uma página de notícias</p>
+    <a href="paginas/noticias.html" target="_self" rel="next">notícias</a>
+
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="livro/exercicios.pdf" download="meulivro.pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/exercicios.zip" download="meulivro.zip">Baixar o livro em ZIP</a></li>
+    </ul>
+</body>
+</html>
