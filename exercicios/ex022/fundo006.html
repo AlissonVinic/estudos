@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de tela</title>
+    <style>
+
+        
+        body{
+            height: 100vh;
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center top;
+            background-repeat: no-repeat;
+            /*O gackground-size: cover; fará com que a imagem cubra totalmente container no qual ela está inserido, fazendo cortes, se necessário, para que a imagem caiba na caixa. Nesse caso, não estava cobrindo toda a área da janela, então descobri que é porque o body não estava ocupando toda a view hight, então deixei o body com 100% da viewhight e resolvi o problema*/
+            /*Existe o bg size contain, que encaixa a imagem toda na caixa sem fazer cortes, porém, não cobrirá todo o container, dependendo do tamanho da tela*/
+            background-size: cover;
+            /*o bg attachment fixed deixa a imagem fixa quando o usuário scrolla a tela pra baixo*/
+            background-attachment: fixed;
+
+            /*
+            bg shorthand
+            color > image > position > repeat > size > attachment
+            (talvez a shorthand nao funcione bem)
+            */
+        }
+
+        main{
+            background-color: white;
+            max-width: 700px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui unde architecto modi aut illo magni neque id ab quaerat! Deserunt labore omnis amet reprehenderit deleniti libero distinctio hic corrupti quos? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam mollitia magni enim eligendi obcaecati? Commodi expedita molestiae voluptate nostrum veniam iusto consequatur vero sit a! Autem ut iure illum eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, maxime earum obcaecati soluta labore qui sequi deleniti consequatur porro dignissimos itaque repellendus laborum sapiente repellat nesciunt culpa. Sed, quasi! Harum.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam facere a mollitia nisi ad at! Repudiandae, quia ipsum culpa repellat tempore quibusdam natus eligendi ea dolor ipsam, aliquam eum alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, consequuntur porro, sint aspernatur sed recusandae soluta enim ullam cum autem minima, eligendi sunt aut temporibus voluptas voluptates deleniti provident similique.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sed illo ipsa magni ex laboriosam, natus minima asperiores magnam ducimus corrupti ipsam debitis soluta, inventore odit, officiis quo fugiat. Ullam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam, suscipit enim nulla labore ab doloremque officiis in, sed quaerat laborum et ducimus sequi quidem tempora qui libero illum quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci laboriosam reprehenderit ut odit tenetur sapiente hic, sint aliquid temporibus magni maxime omnis enim, neque harum aperiam corrupti repellendus facilis quia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, eius? Pariatur consectetur dolorum minus eos quidem commodi quam, enim distinctio, assumenda minima aliquam error veniam libero, adipisci atque aspernatur repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cum asperiores cumque commodi tempore vero quo, optio deserunt incidunt, iusto magnam rem esse in. Laudantium deleniti officiis voluptatum eum quos.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident maxime cupiditate recusandae, sapiente animi fugit. Incidunt rerum voluptatem quis ad aspernatur ab, exercitationem architecto sapiente, recusandae fuga itaque sint reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est iusto ea beatae commodi temporibus minima explicabo dolorum tenetur, similique ad nobis animi facere veritatis eligendi voluptatem expedita ipsum, rerum accusamus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, iusto nam. Facere, tempora quisquam aut atque cupiditate accusantium dolorem impedit. Corporis tempore architecto fugit fugiat nihil quia maiores exercitationem blanditiis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nam ipsa, voluptatum similique ullam enim beatae non numquam, dolor facilis neque molestias deleniti maiores quasi minus cum perspiciatis labore itaque.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eligendi doloremque iusto, dolore distinctio rerum dolor laboriosam libero quidem aperiam dolorem vero, cum magnam neque, nulla quae quisquam hic quos? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor exercitationem nemo voluptates repudiandae neque molestias voluptatem id possimus, dicta odio, adipisci recusandae impedit ratione illum vel quo nihil debitis iusto! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam aspernatur ex culpa ea beatae possimus suscipit odit ipsum quasi hic delectus et quisquam nisi, illum quis aperiam, tenetur saepe incidunt!</p>
+    </main>
+</body>
+</html>

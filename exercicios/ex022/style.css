@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+p{
+    text-align: justify;
+}
+
+.produto{
+    max-width: 250px;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.imagem-produto{
+    /*Algo que eu não sabia: a tag img é inline por padrão. para que ela seja considerada bloco, deve-se mudar seu display para bloco*/
+    display: block;
+    max-width: 200px;
+    margin: auto;
+
+}
+
+.titulo-produto{
+    text-align: center;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao-produto{
+    padding: 0.5em;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 4px;
+    margin: auto;
+    display: block;
+    font-weight: bold;
+}
+
+.botao-produto:hover{
+    transition: 0.5s;
+    background-color: rgb(213, 76, 255);
+    cursor: pointer;
+}
+

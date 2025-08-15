@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            margin-top: 50px;
+            background-image: url('imagens/target001.png');
+            /*o bg size deve receber dois valores, height e width, ou altura e largura*/
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            /*O absolute vai se posicionar em relação ao seu primeiro ancestral cuja posição não for static. por exemplo: se o container fosse estático, o conteúdo se posicionaria em relação ao body. Caso não seja dado nenhum comando(exemplo: right,left...) para posicionar o conteúdo, ele seguirá seu objeto pai, até que esse comando seja dado*/
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            /*o conteudo se afasta da borda esquerda do container a uma distancia de 50% da largura desse container.*/
+            left: 50%;
+            /*mesma coisa aqui. Cria um espaço entre a borda do topo do container e o conteúdo. Esse espaço tem 50% da altura do container*/
+            top: 50%;
+
+            /*Faz com que o conteúdo recue 50% de sua propria largura para a esquerda, e 50% de sua altura para cima, fazendo-o ficar centralizado no container. É como se fosse criada uma margin no eixo x, e no eixo y, com metade do tamanho do conteúdo, só que como os valores estão negativos, o conteúdo recua no x e no y.(lembre do plano cartesiano)
+            tem o translateX e o translateY. usando só translate() ele recebe os valores de X e de Y.
+            */
+            
+            background-color: yellow;
+            transform: translate(-50%, -50%);
+
+            /*
+            Aqui, teríamos o mesmo resultado dos comandos e posicionamento acima, é bom ver e testar para entender bem como funciona.
+            right: 50%;
+            top: 50%;
+            transform: translate(50%, 50%);*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo"></article>
+    </section>
+</body>
+</html>
