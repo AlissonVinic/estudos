@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            min-width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            background-color: lightgray;
+            color: black;
+            border: 1px solid black;
+            padding: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+            position: sticky;
+            top: -1px;
+        }
+        th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        #populacao{
+            width: 80px
+        }
+
+        /*Efeito zebrado na tabela*/
+        tbody tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        td{
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        .num{
+            text-align: right;
+        }
+        tfoot{
+            border: 1px solid black;
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+    Anatomia para tabelas grandes
+    table
+        head
+            tr,td,th
+        tbody
+            tr, td, th
+        tfoot
+            tr,td,th 
+    -->
+
+    <table>
+        <!--caption é o título da tabela-->
+        <caption>Populações das unidades federativas</caption>
+        <thead>
+            <tr>
+                <!--scope, ou escopo, indica se o th em questão se refere a uma linha(row), a uma coluna(col), além de rowgroup e colgroup-->
+                <th scope="col">Estado</th>
+                <th scope="col" id="populacao">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">8000000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">4000000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">5000000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">70000</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">600000</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">50000</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">10000000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">12000000</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">9000000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!--É th porque é um título-->
+                <th scope="row">
+                    Total de habitantes
+                </th>
+                <!--aqui sera td porque é um dado-->
+                <td class="num"><strong>21000000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos accusantium perspiciatis eius veniam, nesciunt neque nulla aperiam. Nulla expedita eos distinctio dolores atque eveniet fuga corporis facere. Consequuntur, magni. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam facere saepe odit, qui in quasi laborum eaque delectus veritatis a voluptatem officiis nulla autem labore illo nemo recusandae aut magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat in nemo, aliquam eaque at, sed, consequuntur facilis quia asperiores delectus alias sapiente modi voluptates? Dolores sed natus in tempora eaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias impedit reiciendis, voluptatum inventore architecto totam itaque, rem tempora aspernatur ex distinctio aperiam optio eligendi ut similique vel aliquid laboriosam quas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis mollitia incidunt praesentium exercitationem, minima, atque totam voluptatibus rerum repellat vero vitae fugit sit tempore repudiandae labore quos odio facere animi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut asperiores ducimus quidem dicta doloribus optio reprehenderit, delectus numquam, non iure id temporibus pariatur sint. Voluptate quibusdam velit similique minus? Iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugit nostrum qui earum corrupti tempore iure! Vel optio ab corporis! Quo dolore non distinctio possimus! Error officia quidem repellendus fuga. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quos magni quod voluptatum consequatur ipsum modi tempora recusandae doloremque, dolore dignissimos tempore quaerat, fugiat repellendus fugit quia laborum, maxime consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, delectus aliquam! Error, minima. Assumenda ratione maiores quia fugit doloremque, accusantium, deleniti accusamus error, fugiat quo est reiciendis dolores distinctio. Delectus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, voluptates exercitationem! Veniam, minima fuga odio, sunt eveniet natus harum eligendi saepe debitis, commodi suscipit! Adipisci ratione cumque numquam laboriosam ullam.</p>
+</body>
+</html>

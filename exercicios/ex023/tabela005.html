@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes de coluna</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        th, td{
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        col.nome, col.idade{
+            background-color: rgb(203, 240, 255) ;
+        }
+
+        col.sexo, col.profissao{
+            background-color: rgb(255, 209, 209);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+        <col class="nome">
+        <col class="sexo">
+        <col class="idade">
+        <col class="profissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Carlos</td>
+                <td>M</td>
+                <td>18</td>
+                <td>Pedreiro</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>M</td>
+                <td>16</td>
+                <td>Mecanico</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>M</td>
+                <td>21</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>F</td>
+                <td>18</td>
+                <td>Manicure</td>
+            </tr>
+            <tr>
+                <td>Amanda</td>
+                <td>F</td>
+                <td>26</td>
+                <td>Vendedora</td>
+            </tr>
+            <tr>
+                <td>Hugo</td>
+                <td>M</td>
+                <td>46</td>
+                <td>Pintor</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
