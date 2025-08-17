@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <!--Nesse caso usei post para que a senha nao seja exibina na URL-->
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusuario">Nome:</label>
+            <!--Required significa que o preenchimento do campo é obrigatório-->
+            <input type="text" name="usuario" id="isuario" required placeholder="Digite seu nome" autocomplete="name">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <!--Para senha usamos o type="password"-->
+            <!--minlength e maxlength é tamanho minimo e maximo-->
+            <input type="password" name="senha" id="isenha" required minlength="5" maxlength="20" size="10" placeholder="Senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!--Pode colocar o autocomplete="off" no form se preferir-->
+    <!--Se fosse usar javascript, ficaria só action="", ou então sem action-->
+    <!--O method="post" serve para os dados não ficarem visíveis na URL. ainda da pra acessá-los pelo inspecionar. Para resolver isso, deve-se usar HTTP, que é algo que iremos estudar daqui a um tempo-->
+    <!--post: dados sensíveis, dados não aparecendo diretamente na URL, se os dados tiverem mais de 3000 bytes, e se quiser fazer envios de arquivos-->
+    <form action="cadastro.php" method="post">
+        <p>
+            <!--O label serve para ligar a palavra ao seu input. -->
+            <label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p><input type="submit" value="enviar"></p>
+    </form>
+</body>
+</html>

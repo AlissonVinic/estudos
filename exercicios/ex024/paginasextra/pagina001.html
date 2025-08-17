@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+
+        #container-tabela{
+            max-width: 80vw;
+            /*Rolagem lateral na tabela
+            OBS: O scroll, sempre mostrará a barra de rolagem, mesmo que não precise, e o auto só mostra se precisar, ou seja, se a largura da tela for menor que a largura da tabela. Porisso preferi usar o alto*/
+            overflow-x: auto;
+            margin: auto;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 650px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        tr:nth-child(2n){
+            background-color: white;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .num{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Televisão</td>
+                    <td class="num">43</td>
+                    <td class="num">34</td>
+                    <td class="num">23</td>
+                    <td class="num">43</td>
+                    <td class="num">21</td>
+                    <td class="num">43</td>
+                    <td class="num">23</td>
+                    <td class="num">66</td>
+                    <td class="num">32</td>
+                    <td class="num">56</td>
+                    <td class="num">33</td>
+                    <td class="num">76</td>
+                </tr>
+                <tr>
+                    <td>Computador</td>
+                    <td class="num">43</td>
+                    <td class="num">34</td>
+                    <td class="num">23</td>
+                    <td class="num">43</td>
+                    <td class="num">21</td>
+                    <td class="num">43</td>
+                    <td class="num">23</td>
+                    <td class="num">66</td>
+                    <td class="num">32</td>
+                    <td class="num">56</td>
+                    <td class="num">33</td>
+                    <td class="num">76</td>
+                </tr>
+                <tr>
+                    <td>Mouse</td>
+                    <td class="num">43</td>
+                    <td class="num">34</td>
+                    <td class="num">23</td>
+                    <td class="num">43</td>
+                    <td class="num">21</td>
+                    <td class="num">43</td>
+                    <td class="num">23</td>
+                    <td class="num">66</td>
+                    <td class="num">32</td>
+                    <td class="num">56</td>
+                    <td class="num">33</td>
+                    <td class="num">76</td>
+                </tr>
+                <tr>
+                    <td>Teclado</td>
+                    <td class="num">43</td>
+                    <td class="num">34</td>
+                    <td class="num">23</td>
+                    <td class="num">43</td>
+                    <td class="num">21</td>
+                    <td class="num">43</td>
+                    <td class="num">23</td>
+                    <td class="num">66</td>
+                    <td class="num">32</td>
+                    <td class="num">56</td>
+                    <td class="num">33</td>
+                    <td class="num">76</td>
+                </tr>
+                <tr>
+                    <td>Celular</td>
+                    <td class="num">43</td>
+                    <td class="num">34</td>
+                    <td class="num">23</td>
+                    <td class="num">43</td>
+                    <td class="num">21</td>
+                    <td class="num">43</td>
+                    <td class="num">23</td>
+                    <td class="num">66</td>
+                    <td class="num">32</td>
+                    <td class="num">56</td>
+                    <td class="num">33</td>
+                    <td class="num">76</td>
+                </tr>
+                <tr>
+                    <td>Carregador</td>
+                    <td class="num">43</td>
+                    <td class="num">34</td>
+                    <td class="num">23</td>
+                    <td class="num">43</td>
+                    <td class="num">21</td>
+                    <td class="num">43</td>
+                    <td class="num">23</td>
+                    <td class="num">66</td>
+                    <td class="num">32</td>
+                    <td class="num">56</td>
+                    <td class="num">33</td>
+                    <td class="num">76</td>
+                </tr>
+                <tr>
+                    <td>Monitor</td>
+                    <td class="num">43</td>
+                    <td class="num">34</td>
+                    <td class="num">23</td>
+                    <td class="num">43</td>
+                    <td class="num">21</td>
+                    <td class="num">43</td>
+                    <td class="num">23</td>
+                    <td class="num">66</td>
+                    <td class="num">32</td>
+                    <td class="num">56</td>
+                    <td class="num">33</td>
+                    <td class="num">76</td>
+                </tr>
+                <tr>
+                    <td>Película</td>
+                    <td class="num">43</td>
+                    <td class="num">34</td>
+                    <td class="num">23</td>
+                    <td class="num">43</td>
+                    <td class="num">21</td>
+                    <td class="num">43</td>
+                    <td class="num">23</td>
+                    <td class="num">66</td>
+                    <td class="num">32</td>
+                    <td class="num">56</td>
+                    <td class="num">33</td>
+                    <td class="num">76</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>
