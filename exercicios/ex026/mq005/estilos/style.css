@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/*Estilo Celular*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background-color: lightgray;
+}
+
+header{
+    background-color: gray;
+    min-height: 95px;
+}
+
+header h1{
+    text-align: center;
+    padding: 10px 0;
+}
+
+header nav{
+    padding:  0;
+    background-color: rgb(244, 244, 244);
+}
+
+#menu-hamburger img{
+    display: block;
+    margin: auto;
+    width: 30px;
+}
+
+#menu-hamburger{
+    padding: 3px;
+}
+
+#menu-hamburger:hover{
+    cursor: pointer;
+}
+
+#itens{
+    display: none;
+    position: absolute;
+    z-index: 5;
+}
+
+header ul{
+    background-color: rgb(170, 170, 170);
+    width: 100vw;
+}
+
+header li{
+    display: block;
+    padding: 0;
+    border-bottom: 1px solid rgb(121, 125, 130);
+}
+
+header a{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+    padding: 12px ;
+}
+
+header a:hover{
+    transition: 0.5s;
+    background-color: rgb(207, 207, 207);
+}
+
+main{
+    width: 90vw;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main h1{
+    margin: 0 0 20px 0;
+}
+
+main p{
+    text-align: justify;
+    text-indent: 32px;
+    line-height: 24px;
+}

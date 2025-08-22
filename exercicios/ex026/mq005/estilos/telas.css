@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    header h1{
+        padding: 50px 0;
+    }
+
+    #menu-hamburger{
+        display: none;
+    }
+
+    #itens{
+        display: block;
+    }
+
+    header li{
+        display: inline-block;
+        padding: 0px;
+        border-bottom: none;
+    }
+
+    main{
+        margin: 55px auto;
+        width: 50vw;
+    }
+}

@@ -9,15 +9,14 @@ Tablet: 768 a 991px
 Desktop: 992px a 1199px
 TVs e monitores: 1920px+
 */
-
-@media print {
+@media print{
 
 }
 
 /*Tablet*/
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     body {
-        background-image: url(../imagens/back-tablet.jpg);
+        background-image: url('../imagens/back-tablet.jpg');
     }
 
     #phone {
@@ -41,6 +40,54 @@ TVs e monitores: 1920px+
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
 
-@media screen and (min-width: 1200px) {}
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #impressora {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+
+    #tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: none
+    }
+
+    #impressora {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: block;
+    }
+}

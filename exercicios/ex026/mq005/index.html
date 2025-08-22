@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/telas.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1 id="meu">Meu site</h1>
+        <nav>
+            <div id="menu-hamburger" onclick="clickMenu()">
+                <img src="imagens/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">
+            </div>
+        <menu id="itens">
+            <ul>
+                <li><img src="" alt=""></li>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </nav>
+    </header>
+    
+
+    <main>
+        <article>
+            <h1>Meu título</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit exercitationem, placeat, laudantium iste possimus ratione provident nisi itaque officia tempora repellendus rerum, consequuntur eaque blanditiis consequatur dolor similique quas cum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A excepturi obcaecati laboriosam velit hic nostrum rerum? Deserunt quidem libero mollitia earum, non maiores, cumque molestiae eveniet ex optio aliquid dolor!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quaerat quod accusantium saepe a sint pariatur ab facere sunt blanditiis corrupti, voluptas ratione quam aliquid dolorum eaque doloribus. In, quae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, odit aliquid aspernatur voluptatibus facere doloremque delectus necessitatibus, voluptate dignissimos rerum voluptatum, aperiam beatae maxime eaque quisquam repellat alias pariatur. Mollitia?</p>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'none'){
+                itens.style.display = 'block';
+            }
+            else{
+                itens.style.display= 'none';
+            }
+            
+        }
+
+        function mudouTamanho(){
+            if(window.innerWidth += 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
